@@ -1,2 +1,2 @@
 # ADASOFT
-Software Project 2026
+Software Project 2026 - Online course platform
