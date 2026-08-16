@@ -1,0 +1,18 @@
+﻿@model ADASOFT.Data.Entities.Attendant
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Borrar</h1>
+
+<h3>¿Esta seguro de querer borrar?</h3>
+<div>
+    <partial name="_DetailsAttendant"/>    
+    <form asp-action="DeleteAttendant">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Borrar" class="btn btn-outline-danger" />
+     <a asp-action="Details" asp-route-id="@Model?.User.Id" class="btn btn-outline-success"><i class="fa-solid fa-arrow-rotate-left"></i> Regresar</a>
+
+    </form>
+</div>
